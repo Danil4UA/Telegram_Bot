@@ -10,7 +10,7 @@ const {
 const TELEGRAM_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
 const URI = `/webhook/${TELEGRAM_BOT_TOKEN}`;
 const WEBHOOK_URL = `${SERVER_URL}${URI}`;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(express.json());
